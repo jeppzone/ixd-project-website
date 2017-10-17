@@ -3,6 +3,7 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
@@ -23,6 +24,14 @@ p {
   opacity: 0.95;
 }
 
+.video-container p {
+  font-size: 10rem;
+  color: #FFF;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
 .video-container {
     position: relative;
     bottom: 0%;
@@ -31,7 +40,6 @@ p {
     width: 100%;
     overflow: hidden;
     background: #000;
-    font-size: 200px;
     color: white;
 }
 .video-container .filter {
@@ -50,62 +58,34 @@ p {
     width: 100%;
 }
 
-.page-header span {
-  padding-top: 30px;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 100px;
-  letter-spacing: 20px;
-  color: white;
-}
-
-.circle-header {
-  letter-spacing: 5px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  font-size: 50px;
-  color: #fff;
-  line-height: 300px;
-  text-align: center;
-  background: #3C6E51;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.subtext {
-  color: #000;
-  text-align: center;
-  font-weight: 100;
-  font-size: 24px;
-}
-
-@media (max-width: 769px) {
-    .page-header {
-      height: 300px;
-    }
-
-    .page-header span {
-      font-size: 46px;
-    }
-}
-
 .movie {
+  background-color: #F1F1F1;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .movie iframe {
 }
 
 .contributors {
-  background-color: #00A445;
+  background-color: #E1E1E1;
   color: #fff;
   width: 100%;
   display:inline-flex;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .contributors {
+    display: block;
+  }
+}
+
+.contributors p {
+  font-weight: 200;
 }
 
 .contributor {
@@ -125,7 +105,7 @@ p {
 }
 
 .contributor img {
-  width: 200px;
+  width: 10em;
 }
 
 .image-container {
@@ -135,6 +115,10 @@ p {
   background-size: cover;
   display: flex;
   justify-content: flex-end;
+}
+
+.image-container.left {
+  justify-content: flex-start;
 }
 
 .cow {
@@ -161,6 +145,12 @@ p {
   align-items: center;
 }
 
+.image-text.left{
+  float: left;
+  padding: 30px 0 0 60px;
+  justify-content: flex-start;
+}
+
 .farm .image-text {
   background-color: #f1f1f1;
 }
@@ -182,4 +172,8 @@ p {
 
 .text-content p {
   font-size: 2rem;
+}
+
+.chalmers {
+  text-align: center;
 }
