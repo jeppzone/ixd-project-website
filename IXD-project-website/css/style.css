@@ -11,6 +11,18 @@ body {
 .touch .video-container .poster {
     display: block !important;
 }
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #454545;
+  opacity: 0.95;
+}
+
 .video-container {
     position: relative;
     bottom: 0%;
@@ -117,10 +129,12 @@ body {
 }
 
 .image-container {
-  height: 1080px;
+  height: 100vh;
   text-align: right;
   font-size: 30px;
-  background-size: cover
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cow {
@@ -136,16 +150,36 @@ body {
 }
 
 .image-text {
-  width: 50%;
-  height: 1080px;
+  background-color: #ededed;
+  height: 100%;
+  flex: 0 1 40%;
   background-size: 100%;
-  padding-right: 30px;
+  padding: 30px 60px;
   float: right;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image-text h1 {
-  display: block;
+.farm .image-text {
+  background-color: #f1f1f1;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.text-content h1 {
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  letter-spacing: 0.6rem;
+  font-size: 3.5rem;
+}
+
+.text-content p {
+  font-size: 2rem;
 }
