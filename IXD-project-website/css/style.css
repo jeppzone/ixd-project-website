@@ -1,0 +1,151 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    font-size: 200px;
+    color: white;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.page-header span {
+  padding-top: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 100px;
+  letter-spacing: 20px;
+  color: white;
+}
+
+.circle-header {
+  letter-spacing: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 300px;
+  text-align: center;
+  background: #3C6E51;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  color: #000;
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+@media (max-width: 769px) {
+    .page-header {
+      height: 300px;
+    }
+
+    .page-header span {
+      font-size: 46px;
+    }
+}
+
+.movie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.movie iframe {
+}
+
+.contributors {
+  background-color: #00A445;
+  color: #fff;
+  width: 100%;
+  display:inline-flex;
+  justify-content: center;
+}
+
+.contributor {
+  display: block;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.contributor p {
+  font-size: 30px;
+}
+
+.contributor i {
+  font-size: 20px;
+}
+
+.contributor img {
+  width: 200px;
+}
+
+.image-container {
+  height: 1080px;
+  text-align: right;
+  font-size: 30px;
+  background-size: cover
+}
+
+.cow {
+  background-image: url('../assets/cow.png');
+}
+
+.forest {
+  background-image: url('../assets/forest.png');
+}
+
+.farm {
+  background-image: url('../assets/farm.png');
+}
+
+.image-text {
+  width: 50%;
+  height: 1080px;
+  background-size: 100%;
+  padding-right: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text h1 {
+  display: block;
+}
